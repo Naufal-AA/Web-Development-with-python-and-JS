@@ -1,0 +1,32 @@
+.success, .warning, .error {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px;
+  margin: 20px; }
+
+.success {
+  background-color: #19e359;
+  boreder: 1px solid #7dffa6;
+  color: #7dffa6; }
+
+.warning {
+  background-color: #f0ad29;
+  boreder: 1px solid #fcd17c;
+  color: #fcd17c; }
+
+.error {
+  background-color: #f24c27;
+  boreder: 1px solid #fa9c87;
+  color: #fa9c87; }
+
+.nesting {
+  padding: 30px;
+  margin: 40px;
+  font-size: 36px; }
+  .nesting p {
+    color: red; }
+  .nesting li {
+    color: blue; }
+
+/*# sourceMappingURL=styles1.css.map */

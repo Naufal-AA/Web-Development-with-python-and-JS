@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media Responsive</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+	        @media (min-width: 500px) {
+	  			body{
+						background:url(asset/Image/thumbs-red.png);
+						background-position: center;
+  						background-repeat: no-repeat;
+  						background-size: cover;
+  						height: 100vh;
+					}
+				h1::before {
+                    content: "Media Responsive in Windows!";
+                }
+			}
+
+			@media (max-width: 500px) {
+				body{
+						background:url(asset/Image/thumbs-blue.png);
+						background-position: center;
+  						background-repeat: no-repeat;
+  						background-size: cover;
+  						height: 100vh;
+					}
+				h1::before {
+                    content: "Media Responsive in Mobiles!";
+                }
+			}
+
+			.grid {
+                display: grid;
+                padding: 1%;
+                grid-column-gap: 1%;
+                grid-row-gap: 1%;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+
+            }
+
+            .grid-item {
+                background-color: white;
+                text-align: center;
+                padding: 10%;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .container > img {
+                margin: 20px;
+                padding: 20px;
+                width: 250px;
+            }
+	        </style>
+	</head>
+	<body>
+		<h1></h1>
+		<div class="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+        </div>
+        <div class="container">
+            <img src="asset/Image/Alleppey.jpg">
+            <img src="asset/Image/Wayanad.jpg">
+            <img src="asset/Image/Cochin.jpg">
+            <img src="asset/Image/Vagamon.jpg">
+        </div>
+	</body>
+</html>
